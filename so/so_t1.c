@@ -1,5 +1,6 @@
 #include <master.h>
 
-foo()
+so_foo()
 {
+    so_faa();
 }

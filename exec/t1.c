@@ -8,5 +8,6 @@ extern int foo();
 
 main()
 {
+    printf( "t1: main(): calling foo()\n" );
     foo();
 }
