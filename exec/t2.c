@@ -26,4 +26,6 @@ void (*so_test)(void);
     (*so_test)();
 
 
+    ar_foo();
+
 }

@@ -5,7 +5,7 @@ $(ODIR)/%.o: %.c
 EXEC_NAME=${BDIR}/${EXEC}
 
 ${EXEC_NAME}:   $(OBJ)
-	${CC} ${EXEC_CFLAGS} -o $@ $^ ${EXEC_LDFLAGS}
+	${CC} ${EXEC_CFLAGS} -o $@ $^ ${EXEC_LDFLAGS} -L ${PLATFORM_ROOT}/ar/ar -lar_test
 
 -include $(wildcard $(ODIR)/*.d)
 

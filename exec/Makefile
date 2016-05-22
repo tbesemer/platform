@@ -4,7 +4,7 @@ include ${PLATFORM_ROOT}/mk/global.mk
 
 EXEC=t
 
-TARG_LIBS+=-ldl
+TARG_LIBS+=-ldl -lcurl
 
 OBJLIST = t1.o t2.o
 
