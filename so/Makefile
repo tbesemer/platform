@@ -2,7 +2,7 @@
 export PLATFORM_ROOT := $(shell cd ../; pwd)
 include ${PLATFORM_ROOT}/mk/global.mk
 
-SDIR=so
+SODIR=so
 SO=so_test
 
 TARG_LIBS+=-lcurl

@@ -1,4 +1,6 @@
+ifeq (${CC},cc)
 CC=gcc
+endif
 BDIR=bin
 ODIR=obj
 OBJ= $(patsubst %,$(ODIR)/%,$(OBJLIST))
@@ -16,7 +18,6 @@ endif
 TARG_LIBS+=
 EXEC_LDFLAGS=-Wl,--whole-archive $(TARG_LIBS) -Wl,--no-whole-archive
 SO_LDFLAGS=-Wl,--whole-archive $(TARG_LIBS) -Wl,--no-whole-archive
-AR_LDFLAGS=-Wl,--whole-archive $(TARG_LIBS) -Wl,--no-whole-archive
 
 INCLUDES+=-I${PLATFORM_ROOT}/include
 

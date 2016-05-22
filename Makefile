@@ -1,7 +1,7 @@
 export PLATFORM_ROOT := $(shell pwd)
 include ${PLATFORM_ROOT}/mk/global.mk
 
-SUBDIRS:= so exec
+SUBDIRS:= ar so exec
 
 all: ${SUBDIRS}
 
