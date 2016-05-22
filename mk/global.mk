@@ -6,3 +6,4 @@ OBJ= $(patsubst %,$(ODIR)/%,$(OBJLIST))
 EXEC_CFLAGS=-flto
 INCLUDES:=-I${PLATFORM_ROOT}/include
 
+SO_CFLAGS:=-fPIC
